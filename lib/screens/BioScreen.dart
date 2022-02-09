@@ -1,4 +1,5 @@
 import 'package:bio_app/widgets/bio_card.dart';
+import 'package:bio_app/widgets/container_card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -85,7 +86,8 @@ class BioScreen extends StatelessWidget {
                   onPressed: () {
                     print('Phone');
                   },
-                  trailingIcon: Icons.phone),
+                  trailingIcon: Icons.phone,marginBottom: 10,),
+              ContainerCard(leadingIcon: Icons.facebook, titel: 'Facebook', subTitel: 'Mohammed Naji', trailingIcon: Icons.share, onPressed: ()=>print('share')),
               Spacer(),
               Padding(
                 padding: EdgeInsets.only(bottom: 10),
@@ -104,3 +106,4 @@ class BioScreen extends StatelessWidget {
     );
   }
 }
+
