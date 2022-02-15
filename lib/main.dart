@@ -1,4 +1,4 @@
-import 'package:bio_app/screens/BioScreen.dart';
+import 'package:bio_app/screens/bio_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {

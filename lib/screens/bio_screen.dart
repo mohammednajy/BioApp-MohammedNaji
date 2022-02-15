@@ -80,14 +80,40 @@ class BioScreen extends StatelessWidget {
                 marginBottom: 10,
               ),
               BioCard(
-                  leadingIcon: Icons.phone_android,
-                  title: 'Phone',
-                  subTitle: '+972592663280',
-                  onPressed: () {
-                    print('Phone');
-                  },
-                  trailingIcon: Icons.phone,marginBottom: 10,),
-              ContainerCard(leadingIcon: Icons.facebook, titel: 'Facebook', subTitel: 'Mohammed Naji', trailingIcon: Icons.share, onPressed: ()=>print('share')),
+                leadingIcon: Icons.phone_android,
+                title: 'Phone',
+                subTitle: '+972592663280',
+                onPressed: () {
+                  print('Phone');
+                },
+                trailingIcon: Icons.phone,
+                marginBottom: 10,
+              ),
+              ContainerCard(
+                leadingIcon: Icons.facebook,
+                titel: 'Facebook',
+                subTitel: 'Mohammed Naji',
+                trailingIcon: Icons.share,
+                onPressed: () {
+                  print('share');
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text('send phone num'),
+                      backgroundColor: Colors.lightBlue,
+                      // onVisible: ()=>Text('Dismiss'),
+                      action: SnackBarAction(
+                       label: 'Dismiss',
+                        onPressed: (){},
+                        disabledTextColor: Colors.yellow,
+                      ),
+                      behavior: SnackBarBehavior.floating,
+                      margin: EdgeInsetsDirectional.only(start: 10,end: 10,top: 10,bottom: 10),
+                      duration: Duration(seconds: 6),
+
+                    ),
+                  );
+                },
+              ),
               Spacer(),
               Padding(
                 padding: EdgeInsets.only(bottom: 10),
@@ -106,4 +132,3 @@ class BioScreen extends StatelessWidget {
     );
   }
 }
-

@@ -20,6 +20,7 @@ class ContainerCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+
       margin: EdgeInsets.symmetric(horizontal: 20),
       decoration: BoxDecoration(
           color: Colors.white,
