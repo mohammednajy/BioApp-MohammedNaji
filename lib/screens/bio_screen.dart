@@ -53,7 +53,7 @@ class BioScreen extends StatelessWidget {
                 height: 5,
               ),
               Text(
-                'Flutter Course - Vision plus company',
+                'Flutter Course',
                 style: TextStyle(fontSize: 17, color: Colors.black54),
               ),
               SizedBox(
@@ -105,10 +105,12 @@ class BioScreen extends StatelessWidget {
                        label: 'Dismiss',
                         onPressed: (){},
                         disabledTextColor: Colors.yellow,
+                        textColor: Colors.yellow,
                       ),
                       behavior: SnackBarBehavior.floating,
                       margin: EdgeInsetsDirectional.only(start: 10,end: 10,top: 10,bottom: 10),
                       duration: Duration(seconds: 6),
+
 
                     ),
                   );
